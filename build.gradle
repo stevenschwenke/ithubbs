@@ -204,6 +204,8 @@ dependencies {
     optional ("org.springframework.boot:spring-boot-configuration-processor") {
         exclude group: 'com.vaadin.external.google', module: 'android-json'
     }
+    compile "org.springframework.cloud:spring-cloud-localconfig-connector"
+    compile "org.springframework.cloud:spring-cloud-cloudfoundry-connector"
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
 }
 
