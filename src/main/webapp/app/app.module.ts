@@ -27,6 +27,9 @@ import {
     ErrorComponent
 } from './layouts';
 import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.component';
+import { LocalGroupsComponent } from './local-groups/local-groups.component';
+import { RegionalConferencesComponent } from './regional-conferences/regional-conferences.component';
+import { ParticipateComponent } from './participate/participate.component';
 
 @NgModule({
     imports: [
@@ -46,7 +49,10 @@ import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.compo
         ErrorComponent,
         PageRibbonComponent,
         FooterComponent,
-        UpcomingEventsComponent
+        UpcomingEventsComponent,
+        LocalGroupsComponent,
+        RegionalConferencesComponent,
+        ParticipateComponent
     ],
     providers: [
         ProfileService,
