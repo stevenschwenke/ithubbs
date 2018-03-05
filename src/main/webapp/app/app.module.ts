@@ -26,6 +26,7 @@ import {
     PageRibbonComponent,
     ErrorComponent
 } from './layouts';
+import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.component';
 
 @NgModule({
     imports: [
@@ -44,7 +45,8 @@ import {
         NavbarComponent,
         ErrorComponent,
         PageRibbonComponent,
-        FooterComponent
+        FooterComponent,
+        UpcomingEventsComponent
     ],
     providers: [
         ProfileService,
