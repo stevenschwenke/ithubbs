@@ -1,22 +1,33 @@
-<!--<jhi-page-ribbon></jhi-page-ribbon>-->
-<!--<div>-->
-    <!--<router-outlet name="navbar"></router-outlet>-->
-<!--</div>-->
-<!--<div class="container-fluid">-->
-    <!--<div class="card jh-card">-->
-        <!--<router-outlet></router-outlet>-->
-        <!--<router-outlet name="popup"></router-outlet>-->
-    <!--</div>-->
-    <!--<jhi-footer></jhi-footer>-->
-<!--</div>-->
-<h1>IT-Hub Braunschweig</h1>
+<div class="custom-header">
 
-<jhi-upcoming-events></jhi-upcoming-events>
+    <button class="custom-tab-button" (click)="showTab('home')">
+        Home
+    </button>
 
-<jhi-local-groups></jhi-local-groups>
+    <button class="custom-tab-button" (click)="showTab('for_organizers')">
+        Für Organisatoren
+    </button>
 
-<jhi-regional-conferences></jhi-regional-conferences>
+</div>
 
-<jhi-current-campaigns></jhi-current-campaigns>
+<div *ngIf="tabToShow === 'home'">
+    <h1>IT-Hub Braunschweig</h1>
 
-<jhi-participate></jhi-participate>
+    <jhi-upcoming-events></jhi-upcoming-events>
+
+    <jhi-local-groups></jhi-local-groups>
+
+    <jhi-regional-conferences></jhi-regional-conferences>
+
+    <jhi-current-campaigns></jhi-current-campaigns>
+
+    <jhi-participate></jhi-participate>
+</div>
+
+<div *ngIf="tabToShow === 'for_organizers'">
+    <h1>IT-Hub Braunschweig - für Organisatoren</h1>
+
+    <jhi-local-groups></jhi-local-groups>
+
+    <jhi-participate></jhi-participate>
+</div>

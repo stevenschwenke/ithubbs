@@ -1,0 +1,21 @@
+.custom-tab-button {
+    background-color: #1c7430; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.custom-header {
+    background-color: #eafaee;
+    margin-bottom: 1em;
+}
+
+.custom-header-title {
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
