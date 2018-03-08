@@ -30,6 +30,7 @@ import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.compo
 import { LocalGroupsComponent } from './local-groups/local-groups.component';
 import { RegionalConferencesComponent } from './regional-conferences/regional-conferences.component';
 import { ParticipateComponent } from './participate/participate.component';
+import { CurrentCampaignsComponent } from './current-campaigns/current-campaigns.component';
 
 @NgModule({
     imports: [
@@ -52,7 +53,8 @@ import { ParticipateComponent } from './participate/participate.component';
         UpcomingEventsComponent,
         LocalGroupsComponent,
         RegionalConferencesComponent,
-        ParticipateComponent
+        ParticipateComponent,
+        CurrentCampaignsComponent
     ],
     providers: [
         ProfileService,
