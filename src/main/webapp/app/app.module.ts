@@ -31,6 +31,7 @@ import { LocalGroupsComponent } from './local-groups/local-groups.component';
 import { RegionalConferencesComponent } from './regional-conferences/regional-conferences.component';
 import { CurrentCampaignsComponent } from './current-campaigns/current-campaigns.component';
 import { JourFixesComponent } from './jour-fixes/jour-fixes.component';
+import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 
 @NgModule({
     imports: [
@@ -54,7 +55,8 @@ import { JourFixesComponent } from './jour-fixes/jour-fixes.component';
         LocalGroupsComponent,
         RegionalConferencesComponent,
         CurrentCampaignsComponent,
-        JourFixesComponent
+        JourFixesComponent,
+        MissionStatementComponent
     ],
     providers: [
         ProfileService,

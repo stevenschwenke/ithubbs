@@ -8,6 +8,10 @@
         Für Organisatoren
     </button>
 
+    <button class="custom-tab-button" (click)="showTab('mission_statement')">
+        Mission Statement
+    </button>
+
 </div>
 
 <div *ngIf="tabToShow === 'home'">
@@ -27,6 +31,12 @@
     Du möchtest selbst eine neue Gruppe organisieren? Hier findest du wichtige Informationen.
 
     <jhi-jour-fixes></jhi-jour-fixes>
+</div>
+
+<div *ngIf="tabToShow === 'mission_statement'">
+    <h1>IT-Hub Braunschweig - Mission Statement</h1>
+
+    <jhi-mission-statement></jhi-mission-statement>
 </div>
 
 <jhi-footer></jhi-footer>
