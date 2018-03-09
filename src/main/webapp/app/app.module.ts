@@ -29,7 +29,6 @@ import {
 import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.component';
 import { LocalGroupsComponent } from './local-groups/local-groups.component';
 import { RegionalConferencesComponent } from './regional-conferences/regional-conferences.component';
-import { ParticipateComponent } from './participate/participate.component';
 import { CurrentCampaignsComponent } from './current-campaigns/current-campaigns.component';
 import { JourFixesComponent } from './jour-fixes/jour-fixes.component';
 
@@ -54,7 +53,6 @@ import { JourFixesComponent } from './jour-fixes/jour-fixes.component';
         UpcomingEventsComponent,
         LocalGroupsComponent,
         RegionalConferencesComponent,
-        ParticipateComponent,
         CurrentCampaignsComponent,
         JourFixesComponent
     ],
