@@ -5,8 +5,7 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'jhi-main',
-    templateUrl: './main.component.html',
-    styleUrls: ['./main.component.css']
+    templateUrl: './main.component.html'
 })
 export class JhiMainComponent implements OnInit {
 
