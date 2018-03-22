@@ -7,6 +7,11 @@
         "root": "src/main/webapp",
         "outDir": "build/www/app",
         "assets": [
+            {
+                "glob": "**/*",
+                "input": "../../../node_modules/leaflet/dist/images",
+                "output": "leaflet/"
+            },
             "content",
             "favicon.ico"
         ],
@@ -19,7 +24,8 @@
         "mobile": false,
         "styles": [
             "content/css/vendor.css",
-            "content/css/global.css"
+            "content/css/global.css",
+            "dist/leaflet.css"
         ],
         "scripts": []
     }],

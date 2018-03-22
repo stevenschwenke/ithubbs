@@ -1,6 +1,7 @@
 import './vendor.ts';
 
 import { NgModule, Injector } from '@angular/core';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { BrowserModule } from '@angular/platform-browser';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Ng2Webstorage } from 'ngx-webstorage';
@@ -27,6 +28,7 @@ import {
     ErrorComponent
 } from './layouts';
 import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.component';
+import { LeafletCoreDemoComponent } from './core/core-demo.component';
 import { LocalGroupsComponent } from './local-groups/local-groups.component';
 import { RegionalConferencesComponent } from './regional-conferences/regional-conferences.component';
 import { CurrentCampaignsComponent } from './current-campaigns/current-campaigns.component';
@@ -36,6 +38,7 @@ import { MissionStatementComponent } from './mission-statement/mission-statement
 @NgModule({
     imports: [
         BrowserModule,
+        LeafletModule.forRoot(),
         IthubbsAppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
         IthubbsSharedModule,
@@ -47,16 +50,17 @@ import { MissionStatementComponent } from './mission-statement/mission-statement
     ],
     declarations: [
         JhiMainComponent,
-        NavbarComponent,
-        ErrorComponent,
-        PageRibbonComponent,
-        FooterComponent,
-        UpcomingEventsComponent,
-        LocalGroupsComponent,
-        RegionalConferencesComponent,
-        CurrentCampaignsComponent,
-        JourFixesComponent,
-        MissionStatementComponent
+        LeafletCoreDemoComponent
+        // NavbarComponent,
+        // ErrorComponent,
+        // PageRibbonComponent,
+        // FooterComponent,
+        // UpcomingEventsComponent,
+        // LocalGroupsComponent,
+        // RegionalConferencesComponent,
+        // CurrentCampaignsComponent,
+        // JourFixesComponent,
+        // MissionStatementComponent
     ],
     providers: [
         ProfileService,

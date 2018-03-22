@@ -1,46 +1,48 @@
-<nav class="navbar navbar-collapse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button class="btn btn-primary" (click)="showTab('home')">
-                Home
-            </button>
+<jhi-leaflet-core-demo></jhi-leaflet-core-demo>
 
-            <button class="btn btn-primary" (click)="showTab('for_organizers')">
-                Für Organisatoren
-            </button>
+<!--<nav class="navbar navbar-collapse">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="navbar-header">-->
+            <!--<button class="btn btn-primary" (click)="showTab('home')">-->
+                <!--Home-->
+            <!--</button>-->
 
-            <button class="btn btn-primary" (click)="showTab('mission_statement')">
-                Mission Statement
-            </button>
-        </div>
-    </div>
-</nav>
+            <!--<button class="btn btn-primary" (click)="showTab('for_organizers')">-->
+                <!--Für Organisatoren-->
+            <!--</button>-->
 
-<div class="container-fluid">
+            <!--<button class="btn btn-primary" (click)="showTab('mission_statement')">-->
+                <!--Mission Statement-->
+            <!--</button>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
 
-    <div *ngIf="tabToShow === 'home'">
-        <h1>IT-Hub Braunschweig</h1>
+<!--<div class="container-fluid">-->
 
-        <jhi-upcoming-events></jhi-upcoming-events>
+    <!--<div *ngIf="tabToShow === 'home'">-->
+        <!--<h1>IT-Hub Braunschweig</h1>-->
 
-        <jhi-local-groups></jhi-local-groups>
+        <!--<jhi-upcoming-events></jhi-upcoming-events>-->
 
-        <jhi-regional-conferences></jhi-regional-conferences>
+        <!--<jhi-local-groups></jhi-local-groups>-->
 
-        <jhi-current-campaigns></jhi-current-campaigns>
-    </div>
+        <!--<jhi-regional-conferences></jhi-regional-conferences>-->
 
-    <div *ngIf="tabToShow === 'for_organizers'">
-        <h1>IT-Hub Braunschweig - für Organisatoren</h1>
-        Du möchtest selbst eine neue Gruppe organisieren? Hier findest du wichtige Informationen.
+        <!--<jhi-current-campaigns></jhi-current-campaigns>-->
+    <!--</div>-->
 
-        <jhi-jour-fixes></jhi-jour-fixes>
-    </div>
+    <!--<div *ngIf="tabToShow === 'for_organizers'">-->
+        <!--<h1>IT-Hub Braunschweig - für Organisatoren</h1>-->
+        <!--Du möchtest selbst eine neue Gruppe organisieren? Hier findest du wichtige Informationen.-->
 
-    <div *ngIf="tabToShow === 'mission_statement'">
-        <h1>IT-Hub Braunschweig - Mission Statement</h1>
+        <!--<jhi-jour-fixes></jhi-jour-fixes>-->
+    <!--</div>-->
 
-        <jhi-mission-statement></jhi-mission-statement>
-    </div>
-</div>
-<jhi-footer></jhi-footer>
+    <!--<div *ngIf="tabToShow === 'mission_statement'">-->
+        <!--<h1>IT-Hub Braunschweig - Mission Statement</h1>-->
+
+        <!--<jhi-mission-statement></jhi-mission-statement>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<jhi-footer></jhi-footer>-->

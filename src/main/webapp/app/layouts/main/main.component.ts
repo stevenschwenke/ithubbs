@@ -8,7 +8,6 @@ import { Title } from '@angular/platform-browser';
     templateUrl: './main.component.html'
 })
 export class JhiMainComponent implements OnInit {
-
     public tabToShow = 'home';
 
     constructor(
