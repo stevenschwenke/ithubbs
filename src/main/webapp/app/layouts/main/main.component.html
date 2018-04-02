@@ -12,6 +12,10 @@
             <button class="btn btn-primary" (click)="showTab('mission_statement')">
                 Mission Statement
             </button>
+
+            <button class="btn btn-primary" (click)="showTab('imprint')">
+                Impressum
+            </button>
         </div>
     </div>
 </nav>
@@ -41,6 +45,12 @@
         <h1>IT-Hub Braunschweig - Mission Statement</h1>
 
         <jhi-mission-statement></jhi-mission-statement>
+    </div>
+
+    <div *ngIf="tabToShow === 'imprint'">
+        <h1>IT-Hub Braunschweig - Impressum</h1>
+
+        <jhi-imprint></jhi-imprint>
     </div>
 </div>
 <jhi-footer></jhi-footer>

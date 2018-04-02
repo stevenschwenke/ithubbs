@@ -32,6 +32,7 @@ import { RegionalConferencesComponent } from './regional-conferences/regional-co
 import { CurrentCampaignsComponent } from './current-campaigns/current-campaigns.component';
 import { JourFixesComponent } from './jour-fixes/jour-fixes.component';
 import { MissionStatementComponent } from './mission-statement/mission-statement.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
     imports: [
@@ -56,7 +57,8 @@ import { MissionStatementComponent } from './mission-statement/mission-statement
         RegionalConferencesComponent,
         CurrentCampaignsComponent,
         JourFixesComponent,
-        MissionStatementComponent
+        MissionStatementComponent,
+        ImprintComponent
     ],
     providers: [
         ProfileService,
