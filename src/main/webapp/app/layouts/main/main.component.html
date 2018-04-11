@@ -1,26 +1,27 @@
-<nav class="navbar navbar-collapse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button class="btn btn-primary" (click)="showTab('home')">
-                Aktuelles
-            </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">IT-Hub Braunschweig</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <button class="btn btn-primary" (click)="showTab('groups')">
-                Gruppierungen
-            </button>
-
-            <button class="btn btn-primary" (click)="showTab('for_organizers')">
-                Für Organisatoren
-            </button>
-
-            <button class="btn btn-primary" (click)="showTab('mission_statement')">
-                Mission Statement
-            </button>
-
-            <button class="btn btn-primary" (click)="showTab('imprint')">
-                Impressum
-            </button>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" (click)="showTab('home')">Aktuelles<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" (click)="showTab('groups')">Gruppierungen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" (click)="showTab('for_organizers')">Für Organisatoren</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" (click)="showTab('mission_statement')">Mission Statement</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" (click)="showTab('imprint')">Impressum</a>
+            </li>
+        </ul>
     </div>
 </nav>
 
@@ -49,7 +50,7 @@
     <div *ngIf="tabToShow === 'for_organizers'">
         <h1>Für Organisatoren</h1>
         <p>
-        Du möchtest selbst eine neue Gruppe organisieren? Hier findest du wichtige Informationen.
+            Du möchtest selbst eine neue Gruppe organisieren? Hier findest du wichtige Informationen.
         </p>
         <jhi-jour-fixes></jhi-jour-fixes>
     </div>
