@@ -27,7 +27,9 @@
 <div class="container-fluid">
 
     <div *ngIf="tabToShow === 'home'">
-        <h1>IT-Hub Braunschweig</h1>
+        <h1>Willkommen beim IT-Hub Braunschweig!</h1>
+
+        <p>Das IT-Hub Braunschweig unterstützt die aktive Entwickler-Community im lebendigen, sich entwickelnden IT-Zentrum Braunschweig.</p>
 
         <jhi-upcoming-events></jhi-upcoming-events>
 
@@ -38,14 +40,14 @@
 
 
     <div *ngIf="tabToShow === 'groups'">
-        <h1>IT-Hub Gruppierungen</h1>
+        <h1>Gruppierungen</h1>
 
         <jhi-local-groups></jhi-local-groups>
 
     </div>
 
     <div *ngIf="tabToShow === 'for_organizers'">
-        <h1>IT-Hub Braunschweig - für Organisatoren</h1>
+        <h1>Für Organisatoren</h1>
         <p>
         Du möchtest selbst eine neue Gruppe organisieren? Hier findest du wichtige Informationen.
         </p>
@@ -53,13 +55,13 @@
     </div>
 
     <div *ngIf="tabToShow === 'mission_statement'">
-        <h1>IT-Hub Braunschweig - Mission Statement</h1>
+        <h1>Mission Statement</h1>
 
         <jhi-mission-statement></jhi-mission-statement>
     </div>
 
     <div *ngIf="tabToShow === 'imprint'">
-        <h1>IT-Hub Braunschweig - Impressum</h1>
+        <h1>Impressum</h1>
 
         <jhi-imprint></jhi-imprint>
     </div>
