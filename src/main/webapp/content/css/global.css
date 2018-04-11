@@ -212,6 +212,16 @@ ui bootstrap tweaks
 /* ==========================================================================
 manually added custom styles
 ========================================================================== */
+
+.header {
+    background-color: #0b6e38 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: normal;
+}
+
 h1 {
     color: #1c7430;
 }
