@@ -219,7 +219,10 @@ manually added custom styles
 
 .nav-link {
     color: #fff !important;
-    font-weight: normal;
+}
+
+.nav-link:hover {
+    text-shadow: 0 0 3px #fff;
 }
 
 h1 {
