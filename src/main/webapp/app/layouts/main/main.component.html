@@ -16,6 +16,9 @@
                 <a class="nav-link" href="#" (click)="showTab('for_organizers')">Für Organisatoren</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="#" (click)="showTab('how_to_use')">How to use</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#" (click)="showTab('mission_statement')">Mission Statement</a>
             </li>
             <li class="nav-item">
@@ -53,6 +56,12 @@
             Du möchtest selbst eine neue Gruppe organisieren? Hier findest du wichtige Informationen.
         </p>
         <jhi-jour-fixes></jhi-jour-fixes>
+    </div>
+
+    <div *ngIf="tabToShow === 'how_to_use'">
+        <h1>How to use</h1>
+
+        <jhi-usage></jhi-usage>
     </div>
 
     <div *ngIf="tabToShow === 'mission_statement'">

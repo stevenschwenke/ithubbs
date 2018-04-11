@@ -33,6 +33,7 @@ import { CurrentCampaignsComponent } from './current-campaigns/current-campaigns
 import { JourFixesComponent } from './jour-fixes/jour-fixes.component';
 import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { UsageComponent } from './usage/usage.component';
 
 @NgModule({
     imports: [
@@ -58,7 +59,8 @@ import { ImprintComponent } from './imprint/imprint.component';
         CurrentCampaignsComponent,
         JourFixesComponent,
         MissionStatementComponent,
-        ImprintComponent
+        ImprintComponent,
+        UsageComponent
     ],
     providers: [
         ProfileService,
