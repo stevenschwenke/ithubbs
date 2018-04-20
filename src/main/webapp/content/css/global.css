@@ -35,12 +35,12 @@ Generic styles
 ========================================================================== */
 
 /* Error highlight on input fields */
-.ng-valid[required], .ng-valid.required  {
-  border-left: 5px solid green;
+.ng-valid[required], .ng-valid.required {
+    border-left: 5px solid green;
 }
 
-.ng-invalid:not(form)  {
-  border-left: 5px solid red;
+.ng-invalid:not(form) {
+    border-left: 5px solid red;
 }
 
 /* other generic styles */
@@ -70,7 +70,7 @@ Generic styles
 
 .break {
     white-space: normal;
-    word-break:break-all;
+    word-break: break-all;
 }
 
 .readonly {
@@ -79,7 +79,7 @@ Generic styles
 }
 
 .footer {
-    border-top: 1px solid rgba(0,0,0,.125);
+    border-top: 1px solid rgba(0, 0, 0, .125);
     background-color: #f8f9fa;
 }
 
@@ -87,7 +87,7 @@ Generic styles
 make sure browsers use the pointer cursor for anchors, even with no href
 ========================================================================== */
 a:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .hand, [jhisortby] {
@@ -97,10 +97,11 @@ a:hover {
 /* ==========================================================================
 Custom alerts for notification
 ========================================================================== */
-.alerts .alert{
+.alerts .alert {
     text-overflow: ellipsis;
 }
-.alert pre{
+
+.alert pre {
     background: none;
     border: none;
     font: inherit;
@@ -145,25 +146,41 @@ entity tables helpers
 ========================================================================== */
 /* Remove Bootstrap padding from the element
    http://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3 */
-.no-padding-left { padding-left: 0 !important; }
-.no-padding-right { padding-right: 0 !important; }
-.no-padding-top { padding-top: 0 !important; }
-.no-padding-bottom { padding-bottom: 0 !important; }
-.no-padding { padding: 0 !important; }
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
 
 /* bootstrap 3 input-group 100% width
    http://stackoverflow.com/questions/23436430/bootstrap-3-input-group-100-width */
-.width-min { width: 1% !important; }
+.width-min {
+    width: 1% !important;
+}
 
 /* Makes toolbar not wrap on smaller screens
  http://www.sketchingwithcss.com/samplechapter/cheatsheet.html#right */
 .flex-btn-group-container {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 /* ==========================================================================
@@ -193,12 +210,12 @@ ui bootstrap tweaks
 }
 
 .datetime-picker-dropdown > li.date-picker-menu div > table .btn-secondary,
-.uib-datepicker-popup  > li > div.uib-datepicker > table .btn-secondary {
+.uib-datepicker-popup > li > div.uib-datepicker > table .btn-secondary {
     border: 0;
 }
 
 .datetime-picker-dropdown > li.date-picker-menu div > table:focus,
-.uib-datepicker-popup  > li > div.uib-datepicker > table:focus {
+.uib-datepicker-popup > li > div.uib-datepicker > table:focus {
     outline: none;
 }
 
@@ -207,46 +224,269 @@ ui bootstrap tweaks
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
- }
+}
 
 /* ==========================================================================
 manually added custom styles
 ========================================================================== */
 
+body, h1, h2, h3, h4 {
+    font-weight: 300
+}
+
+body {
+    background: #fff
+}
+
+a, a:hover {
+    color: #1e1e1e;
+    font-weight: 700
+}
+
+.browserupgrade {
+    margin: .2em 0;
+    background: #ccc;
+    color: #000;
+    padding: .2em 0
+}
+
+.ng-valid.required, .ng-valid[required] {
+    border-left: 5px solid green
+}
+
+.ng-invalid:not(form) {
+    border-left: 5px solid red
+}
+
+.jh-card {
+    padding: 1.5%;
+    margin-top: 20px;
+    border: none
+}
+
+.error {
+    color: #fff;
+    background-color: red
+}
+
+.pad {
+    padding: 10px
+}
+
+.w-40 {
+    width: 40% !important
+}
+
+.w-60 {
+    width: 60% !important
+}
+
+.break {
+    white-space: normal;
+    word-break: break-all
+}
+
+.readonly {
+    background-color: #eee;
+    opacity: 1
+}
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    background-color: #f8f9fa
+}
+
+.hand, [jhisortby], a:hover {
+    cursor: pointer
+}
+
+.alerts .alert {
+    text-overflow: ellipsis
+}
+
+.alert pre {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0
+}
+
+.alert .popover pre {
+    font-size: 10px
+}
+
+.alerts .toast {
+    position: fixed;
+    width: 100%
+}
+
+.alerts .toast.left {
+    left: 5px
+}
+
+.alerts .toast.right {
+    right: 5px
+}
+
+.alerts .toast.top {
+    top: 55px
+}
+
+.alerts .toast.bottom {
+    bottom: 55px
+}
+
+@media screen and (min-width: 480px) {
+    .alerts .toast {
+        width: 50%
+    }
+}
+
+.no-padding-left {
+    padding-left: 0 !important
+}
+
+.no-padding-right {
+    padding-right: 0 !important
+}
+
+.no-padding-top {
+    padding-top: 0 !important
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important
+}
+
+.no-padding {
+    padding: 0 !important
+}
+
+.width-min {
+    width: 1% !important
+}
+
+.flex-btn-group-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end
+}
+
+.row.jh-entity-details > dd {
+    margin-bottom: 15px
+}
+
+@media screen and (min-width: 768px) {
+    .row.jh-entity-details > dt {
+        margin-bottom: 15px
+    }
+
+    .row.jh-entity-details > dd {
+        border-bottom: 1px solid #eee;
+        padding-left: 180px;
+        margin-left: 0
+    }
+}
+
+.card-title a, .carousel, .nav, .pagination {
+    cursor: pointer
+}
+
+.datetime-picker-dropdown > li.date-picker-menu div > table .btn-secondary, .uib-datepicker-popup > li > div.uib-datepicker > table .btn-secondary {
+    border: 0
+}
+
+.datetime-picker-dropdown > li.date-picker-menu div > table:focus, .uib-datepicker-popup > li > div.uib-datepicker > table:focus {
+    outline: none
+}
+
+.thread-dump-modal-lock {
+    max-width: 450px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
 .header {
-    background-color: #0b6e38 !important;
+    background-color: #0b6e38 !important
 }
 
 .nav-link {
     color: #fff !important;
+    border: 1px solid #237c4c;
+    border-radius: 4px;
+    margin: 1px;
+    padding: 10px !important;
 }
 
 .nav-link:hover {
-    text-shadow: 0 0 3px #fff;
+    background-color: #237c4c;
+    border: 1px solid #69a17c;
+    transition: all 0.5s ease;
 }
 
 h1 {
     color: #1c7430;
+    margin-top: 20px;
+    margin-left: 5px;
 }
+
 h2 {
     color: #fff;
     background-color: #0b6e38;
+    border-radius: 4px;
     display: inline-block;
     margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 2px 10px 6px;
 }
 
 h3 {
-    margin-top: 5px;
+    margin-top: 20px;
     color: #1c7430;
+    font-weight: 700
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:hover, .btn-primary:visited {
+    background-color: #1c7430 !important
+}
+
+p {
+    margin-left: 10px;
+}
+
+.navbar-toggler:hover {
+    background-color: #237c4c;
+    transition: all 0.5s ease;
+}
+
+.table tr:hover {
+    background-color: #e8f4ed;
+    transition: all 0.5s ease;
+}
+
+.container-fluid {
+    padding-bottom: 20px;
+}
+
+.table td, .table th {
+    border-top: 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
     font-weight: bold;
+    color: #1c7430;
+    border-bottom: 2px solid #1c7430 !important;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #1c7430 !important;
+.footer .logo {
+    float: right;
+    margin: 20px 10px;
 }
-
-
 
 /* jhipster-needle-css-add-main JHipster will add new css style */
