@@ -10,6 +10,7 @@ import { Title } from '@angular/platform-browser';
 export class JhiMainComponent implements OnInit {
 
     public tabToShow = 'home';
+    navbarCollapsed: boolean;
 
     constructor(
         private titleService: Title,

@@ -34,6 +34,7 @@ import { JourFixesComponent } from './jour-fixes/jour-fixes.component';
 import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { UsageComponent } from './usage/usage.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     imports: [
@@ -45,6 +46,7 @@ import { UsageComponent } from './usage/usage.component';
         IthubbsAdminModule,
         IthubbsAccountModule,
         IthubbsEntityModule,
+        NgbModule.forRoot(),
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
