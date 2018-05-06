@@ -1,4 +1,6 @@
 # ithubbs
+This repository contains all resources for [IT-Hub Braunschweig](http://ithubbs.de), a platform for the software developer community in Brunswick, Germany.  
+
 This application was generated using JHipster 4.14.1, you can find documentation and help at [http://www.jhipster.tech/documentation-archive/v4.14.1](http://www.jhipster.tech/documentation-archive/v4.14.1).
 
 ## Development
