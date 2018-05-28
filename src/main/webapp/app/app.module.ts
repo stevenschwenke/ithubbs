@@ -35,6 +35,7 @@ import { MissionStatementComponent } from './mission-statement/mission-statement
 import { ImprintComponent } from './imprint/imprint.component';
 import { UsageComponent } from './usage/usage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CurrentEverythingComponent } from './current-everything/current-everything.component';
 
 @NgModule({
     imports: [
@@ -62,7 +63,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         JourFixesComponent,
         MissionStatementComponent,
         ImprintComponent,
-        UsageComponent
+        UsageComponent,
+        CurrentEverythingComponent
     ],
     providers: [
         ProfileService,
