@@ -9,7 +9,6 @@ import { Title } from '@angular/platform-browser';
 })
 export class JhiMainComponent implements OnInit {
 
-    public tabToShow = 'home';
     navbarCollapsed: boolean;
 
     constructor(
@@ -31,9 +30,5 @@ export class JhiMainComponent implements OnInit {
                 this.titleService.setTitle(this.getPageTitle(this.router.routerState.snapshot.root));
             }
         });
-    }
-
-    showTab(selectedTab: string) {
-        this.tabToShow = selectedTab;
     }
 }
